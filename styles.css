@@ -1,0 +1,155 @@
+body{
+    background-color: #131114 ;
+    margin: 0;
+    padding-top: 80px; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background: black;
+    padding: 1rem;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav ul li {
+    display: inline;
+    font-family: 'DM Serif Display', sans-serif;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+
+nav ul li a:hover {
+    background-color: grey;
+    border-radius: 10px;
+    transition: all 0.4s ease-out;
+    text-decoration: underline;
+}
+
+
+.Contenu .Accueil {
+    color: #E8EACC;
+    font-family: DM Serif Display, sans-serif;
+    text-align: center;
+    margin-top: 1%;
+    font-size:  120%;
+}
+
+
+.Contenu h1{
+    color: #E8EACC;
+    font-family: DM Serif Display, sans-serif;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.Contenu h1:hover{
+    text-decoration: underline;  
+}
+
+.Contenu .Texte1{
+    color: #FDFDFB; 
+/*    border: 7px solid #232826; */
+    flex-shrink: 1;
+    max-width: 500px;
+    font-size: 1vw;
+    font-family: Lexend Deca, sans-serif;
+    margin-left: 18%;
+    margin-top: 5%;
+    transition: transform 0.3s ease;
+}
+
+.Contenu .Texte1:hover{
+    transform: scale(1.01);
+
+}
+
+.Contenu img {
+    width: 250px;
+    border: 7px solid #232826;
+    border-radius: 20px;
+    margin-left: 58%;
+    bottom: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: absolute;
+    transform: rotate(10deg)
+}
+
+.Contenu img:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .Contenu img {
+        width: 100%; /* L'image prend toute la largeur du conteneur */
+        height: auto; /* Pour garder les proportions */
+        margin-left: 0; /* Pour ne pas avoir de décalage */
+        position: relative; /* Positionner l'image de manière plus fluide */
+        transform: rotate(0deg); /* Annuler la rotation sur petits écrans */
+    }
+}
+
+@media (max-width: 768px) {
+    .Contenu .Texte1 {
+        font-size: 4vw; /* Taille du texte ajustée en fonction de la largeur de l'écran */
+        margin-left: 10%; /* Réduire la marge pour que le texte prenne moins de place */
+        margin-top: 5%; /* Garder un peu d'espace en haut */
+    }
+
+    .Contenu h1 {
+        font-size: 5vw; /* Réduire la taille du titre */
+    }
+
+    .Contenu .Accueil {
+        font-size: 4vw;
+        margin-top: 10%; /* Adapter la marge pour que ça ne soit pas trop étroit */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Les liens seront empilés les uns sur les autres */
+        justify-content: center; /* Centrer les éléments */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Ajouter de l'espace entre les éléments */
+    }
+}

@@ -38,12 +38,13 @@ nav ul {
 
 nav ul li {
     display: inline;
-    font-family: 'DM Serif Display', sans-serif;
+    font-family: Lexend Deca, sans-serif; /*font-family: 'DM Serif Display', sans-serif;*/
+
 }
 
 
 nav ul li a {
-    color: white;
+    color: #E8EACC;                     /*color: white;*/
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
@@ -52,15 +53,33 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: grey;
-    border-radius: 10px;
+    border-radius: 2px;
     transition: all 0.4s ease-out;
     text-decoration: underline;
 }
 
+footer{
+    background: black;  
+    color: #E8EACC;                         /*color: white;*/  
+    padding: 2rem;  
+    position: fixe;
+    bottom: 100px; 
+    left: 0;  
+    width: 100%;  
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    text-align: center; 
+    font-size: 10px; 
+    font-family: Lexend Deca, sans-serif;
+}
+
+footer:hover{
+    text-decoration: underline;
+}
 
 .Contenu .Accueil {
     color: #E8EACC;
-    font-family: DM Serif Display, sans-serif;
+    font-family: Lexend Deca, sans-serif;     /*font-family: DM Serif Display, sans-serif;*/
     text-align: center;
     margin-top: 1%;
     font-size:  120%;
@@ -69,17 +88,14 @@ nav ul li a:hover {
 
 .Contenu h1{
     color: #E8EACC;
-    font-family: DM Serif Display, sans-serif;
+    font-family: Lexend Deca, sans-serif;     /*font-family: DM Serif Display, sans-serif;*/
     text-align: center;
     margin-top: 1%;
 }
 
-.Contenu h1:hover{
-    text-decoration: underline;  
-}
 
 .Contenu .Texte1{
-    color: #FDFDFB; 
+    color: #E8EACC;                         /*color: #FDFDFB;*/ 
 /*    border: 7px solid #232826; */
     flex-shrink: 1;
     max-width: 500px;
@@ -95,7 +111,7 @@ nav ul li a:hover {
 
 }
 
-.Contenu img {
+.image1 {
     width: 250px;
     border: 7px solid #232826;
     border-radius: 20px;
@@ -106,50 +122,63 @@ nav ul li a:hover {
     transform: rotate(10deg)
 }
 
-.Contenu img:hover {
+.image1:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.image2{
+    width: 300px;
+    border: 7px solid #232826;
+    border-radius: 20px;
+    margin-left: 70%;
+    bottom: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: fixed;
+    transform: rotate(-10deg)
+}
+
+.image2:hover {
     transform: scale(1.2); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
 
 
 
-
-
-
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .Contenu img {
-        width: 100%; /* L'image prend toute la largeur du conteneur */
-        height: auto; /* Pour garder les proportions */
-        margin-left: 0; /* Pour ne pas avoir de décalage */
-        position: relative; /* Positionner l'image de manière plus fluide */
-        transform: rotate(0deg); /* Annuler la rotation sur petits écrans */
+        width: 100%; 
+        height: auto;
+        margin-left: 0; 
+        position: relative; 
+        transform: rotate(0deg); 
     }
 }
 
 @media (max-width: 768px) {
     .Contenu .Texte1 {
-        font-size: 4vw; /* Taille du texte ajustée en fonction de la largeur de l'écran */
-        margin-left: 10%; /* Réduire la marge pour que le texte prenne moins de place */
-        margin-top: 5%; /* Garder un peu d'espace en haut */
+        font-size: 4vw; 
+        margin-left: 6%; 
+        margin-top: 5%; 
     }
 
     .Contenu h1 {
-        font-size: 5vw; /* Réduire la taille du titre */
+        font-size: 5vw; 
     }
 
     .Contenu .Accueil {
         font-size: 4vw;
-        margin-top: 10%; /* Adapter la marge pour que ça ne soit pas trop étroit */
+        margin-top: 10%; 
     }
 }
 
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Les liens seront empilés les uns sur les autres */
-        justify-content: center; /* Centrer les éléments */
-    }
+        flex-direction: column; 
+        justify-content: center; 
 
     nav ul li {
-        margin-bottom: 10px; /* Ajouter de l'espace entre les éléments */
+        margin-bottom: 10px; 
     }
+}
 }

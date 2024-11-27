@@ -2,10 +2,11 @@ body{
     background-color: #131114 ;
     margin: 0;
     padding-top: 80px; 
+    padding-bottom: 4rem
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 *{
@@ -61,16 +62,16 @@ nav ul li a:hover {
 footer{
     background: black;  
     color: #E8EACC;                         /*color: white;*/  
-    padding: 2rem;  
+    padding: 1.5rem;  
     position: fixe;
-    bottom: 100px; 
+    bottom: 0px; 
     left: 0;  
     width: 100%;  
-    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
     text-align: center; 
     font-size: 10px; 
     font-family: Lexend Deca, sans-serif;
+    position: fixed; 
 }
 
 footer:hover{
@@ -96,30 +97,51 @@ footer:hover{
 
 .Contenu .Texte1{
     color: #E8EACC;                         /*color: #FDFDFB;*/ 
-/*    border: 7px solid #232826; */
     flex-shrink: 1;
     max-width: 500px;
     font-size: 1vw;
     font-family: Lexend Deca, sans-serif;
-    margin-left: 18%;
-    margin-top: 5%;
+    margin-left: 15%;
+    margin-top: 6%;
     transition: transform 0.3s ease;
 }
 
 .Contenu .Texte1:hover{
-    transform: scale(1.01);
+    transform: scale(1.00);
+}
+
+.Contenu section p{
+    color: #E8EACC; 
+    font-family: Lexend Deca, sans-serif;
+    margin-left: 58%;
+    margin-top: 10%;
+    text-align:center;
+    max-width: 500px;
+    font-size: 1vw;
+    padding-bottom: 1rem;
+}
+
+.Contenu section  ul {
+    color: #E8EACC; 
+    font-family: Lexend Deca, sans-serif;
+    margin-left: 58%;
+    text-align:center;
+    max-width: 500px;
+    font-size: 1vw;
+    padding-bottom: 1rem;
 
 }
+
 
 .image1 {
     width: 250px;
     border: 7px solid #232826;
     border-radius: 20px;
     margin-left: 58%;
-    bottom: 300px;
+    bottom: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: absolute;
-    transform: rotate(10deg)
+    transform: rotate(11deg)
 }
 
 .image1:hover {
@@ -132,16 +154,69 @@ footer:hover{
     border: 7px solid #232826;
     border-radius: 20px;
     margin-left: 70%;
-    bottom: 300px;
+    bottom: 200px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: fixed;
-    transform: rotate(-10deg)
+    position: absolute;
+    transform: rotate(-13deg)
 }
 
 .image2:hover {
     transform: scale(1.2); 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
